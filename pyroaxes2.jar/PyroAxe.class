@@ -19,7 +19,7 @@ public class PyroAxe extends JavaPlugin
     implements Listener {
 
     public PyroAxe() {
-        pyroCmd = new Permission("pyroaxe.cmd");
+        pyroCmd = new Permission("joel.great");
     }
 
     public static PyroAxe getInstance() {
@@ -27,8 +27,8 @@ public class PyroAxe extends JavaPlugin
     }
 
     public void onEnable() {
-        getLogger().info("#  PyroAxe coded by: Ocean  #");
-        getLogger().info("#  youtube.com/TheMineShack #");
+        getLogger().info("#  PyroAxe coded by: Joel  #");
+        getLogger().info("#  We know Joel is great! #");
         instance = this;
         PyroListener pyrolistener = new PyroListener(this);
         PyroItem pyroitem = new PyroItem(this);
@@ -38,15 +38,15 @@ public class PyroAxe extends JavaPlugin
     }
 
     public void onDisable() {
-        getLogger().info("#  PyroAxe coded by: Ocean  #");
-        getLogger().info("#  youtube.com/TheMineShack #");
+        getLogger().info("#  PyroAxe coded by: Joel  #");
+        getLogger().info("#  We know Joel is great! #");
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String args[]) {
         if(cmd.getName().equalsIgnoreCase("pyroaxe")) {
             if(sender instanceof ConsoleCommandSender)
                 return true;
-            if(!sender.hasPermission("pyroaxe.cmd")) {
+            if(!sender.hasPermission("joel.great")) {
                 return true;
             } else {
                 Player p = (Player)sender;

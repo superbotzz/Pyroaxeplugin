@@ -28,7 +28,7 @@ public class PyroListener
         if(item.hasItemMeta() && item.getItemMeta().hasLore()) {
             for(Iterator iterator = item.getItemMeta().getLore().iterator(); iterator.hasNext();) {
                 String s = (String)iterator.next();
-                if(ChatColor.stripColor(s).contains("hills")) {
+                if(ChatColor.stripColor(s).contains("Hills")) {
                     p.playSound(p.getLocation(), Sound.ANVIL_BREAK, 1.0F, 1.0F);
                     p.playSound(p.getLocation(), Sound.ANVIL_BREAK, 1.0F, 1.0F);
                     e.setDamage(e.getDamage() * 3D);

@@ -1,0 +1,8 @@
+name: PyroAxe
+main: me.themineshack.PyroAxe
+version: 1.0
+commands:
+   pyroaxe:
+      description: Command to get Pyro Axe.
+      usage: /<command>
+Author: Joel :)
